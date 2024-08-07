@@ -94,7 +94,7 @@ model:
   # Memory
   directly_add_no_mem_embed: true
   # use high-resolution feature map in the SAM mask decoder
-  use_high_res_features_in_sam: true
+  use_high_res_features_in_sam: false
   # output 3 masks on the first click on initial conditioning frames
   multimask_output_in_sam: true
   # SAM heads

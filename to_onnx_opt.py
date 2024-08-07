@@ -229,7 +229,7 @@ print(embed_dim, embed_size, mask_input_size)
 point_coords = torch.randint(low=0, high=input_size, size=(1, 5, 2), dtype=torch.float)
 point_labels = torch.randint(low=0, high=1, size=(1, 5), dtype=torch.float)
 
-mask_input = torch.rand(1, 1, *mask_input_size, dtype=torch.float)
+mask_input = torch.rand(1, 1, *mask_input_size, dtype=torch.float).fill_(32.)
 has_mask_input = torch.tensor([1], dtype=torch.float)
 orig_im_size = torch.tensor([input_size * 3, input_size * 3], dtype=torch.float)
 
